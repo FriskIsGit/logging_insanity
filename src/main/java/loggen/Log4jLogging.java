@@ -1,6 +1,5 @@
 package loggen;
 
-
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,7 +21,7 @@ public class Log4jLogging{
         logger.error("Log error");
         logger.fatal("FATALITY");
     }
-    
+
     private static void printEnabledOptions(Logger logger){
         System.out.println("-------------------------------------------");
         System.out.println("Is ALL enabled: "   + logger.isEnabled(Level.ALL));
