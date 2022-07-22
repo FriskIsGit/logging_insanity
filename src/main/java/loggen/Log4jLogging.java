@@ -9,7 +9,6 @@ public class Log4jLogging{
     private static final Logger logger = LogManager.getLogger(Log4jLogging.class);
 
     public static void main(String[] args){
-        //testLog();
         loggingAttempt();
         printEnabledOptions(logger);
     }
