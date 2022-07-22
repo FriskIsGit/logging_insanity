@@ -10,7 +10,7 @@ public class Log4jLogging{
 
     public static void main(String[] args){
         loggingAttempt();
-        printEnabledOptions(logger);
+        printEnabledOptions();
     }
     public static void loggingAttempt(){
         logger.trace("Le trace");
@@ -21,7 +21,7 @@ public class Log4jLogging{
         logger.fatal("FATALITY");
     }
 
-    private static void printEnabledOptions(Logger logger){
+    private static void printEnabledOptions(){
         System.out.println("-------------------------------------------");
         System.out.println("Is ALL enabled: "   + logger.isEnabled(Level.ALL));
         System.out.println("Is TRACE enabled: " + logger.isEnabled(Level.TRACE) + " equivalent is " + logger.isTraceEnabled());
